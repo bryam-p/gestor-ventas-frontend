@@ -1,0 +1,27 @@
+header {
+    background-color: var(--blue-color);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.3));
+    .navbar__pp {
+        display: flex;
+        align-items: center;
+        padding: 0.4rem 0;
+    }
+}
+
+.container__icon {
+    max-width: 80px;
+    width: 100%;
+    &--color {
+        color: white !important;
+    }
+}
+
+.container__logopp {
+    max-width: 40px;
+    width: 100%;
+    display: flex;
+    & > img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

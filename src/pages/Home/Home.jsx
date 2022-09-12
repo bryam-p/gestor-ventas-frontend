@@ -1,4 +1,3 @@
-import { Skeleton, Button } from "@mui/material";
 import { useFetch } from "../../hooks/useFetch"
 
 export const Home = () => {
@@ -18,12 +17,12 @@ export const Home = () => {
             </code>
           ))
         }
-        <br/>
-        <Button variant="text">Text</Button>
-        <Button variant="contained">Contained</Button>
-        <Button variant="outlined">Outlined</Button>
+        <br />
+        <div>Text</div>
+        <div>Contained</div>
+        <div>Outlined</div>
       </>
       :
-      <Skeleton variant="rectangular" width={210} height={118} />
+      <div>Cargando...</div>
   )
 }

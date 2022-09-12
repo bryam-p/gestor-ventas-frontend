@@ -1,0 +1,52 @@
+@import "../pages/Login/loginScreen.scss";
+@import "../layout/NavBar/navBar.scss";
+
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  --main-color: #e4eaf0;
+  --blue-color: #04335a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.mt-1 {
+  margin-top: 0.2rem;
+}
+
+.generalContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.generalLinks {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--blue-color);
+}
+
+.generalTitles {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--blue-color);
+  margin: 1rem 0;
+}
+
+.linkUnderline {
+  text-decoration: underline;
+}
+
+.linkUnderline:hover {
+  color: #074b83;
+}
