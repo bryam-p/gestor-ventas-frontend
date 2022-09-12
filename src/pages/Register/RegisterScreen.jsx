@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import * as Yup from 'yup';
 import { useFormik } from 'formik'
 import logopp from '../../assets/img/logo-pp.svg'
+import { TabScreen } from "../../components/TabsPanel/TabScreen";
 
 export const RegisterScreen = () => {
 
@@ -32,6 +33,8 @@ export const RegisterScreen = () => {
 
                 <div className="generalTitles">Registrarse</div>
 
+                <TabScreen />
+
                 <form onSubmit={handleSubmit} noValidate className="content__form">
 
                     <div className="content__form--group">
@@ -53,15 +56,18 @@ export const RegisterScreen = () => {
 
                     {touched.user && errors.user && <span className="errors">{errors.user}</span>}
 
-                    <div className="content__form--input">
-                        <label htmlFor="pass">Contraseña</label>
-                        <input type="password" name="pass" placeholder="Contraseña" {...getFieldProps('pass')} />
+                    <div className="content__form--group">
+                        <div className="content__form--input">
+                            <label htmlFor="pass">Contraseña</label>
+                            <input type="password" name="pass" placeholder="Contraseña" {...getFieldProps('pass')} />
+                        </div>
+
+                        <div className="content__form--input">
+                            <label htmlFor="passRepeat">Repetir contraseña</label>
+                            <input type="password" name="passRepeat" placeholder="Repetir contraseña" {...getFieldProps('passRepeat')} />
+                        </div>
                     </div>
 
-                    <div className="content__form--input">
-                        <label htmlFor="passRepeat">Repetir contraseña</label>
-                        <input type="password" name="passRepeat" placeholder="Repetir contraseña" {...getFieldProps('passRepeat')} />
-                    </div>
 
                     {touched.pass && errors.pass && <span className="errors">{errors.pass}</span>}
 

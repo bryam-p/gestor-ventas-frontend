@@ -2,14 +2,10 @@ import { Link } from "react-router-dom";
 import * as Yup from 'yup';
 import { useFormik } from 'formik'
 import logopp from '../../assets/img/logo-pp.svg'
-import Checkbox from '@mui/material/Checkbox';
 
 export const LoginScreen = () => {
 
-    const {
-        handleChange, values, handleSubmit,
-        handleBlur, touched, errors, getFieldProps
-    } = useFormik({
+    const { handleSubmit, touched, errors, getFieldProps } = useFormik({
         initialValues: {
             user: '',
             pass: ''
