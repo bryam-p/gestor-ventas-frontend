@@ -9,11 +9,13 @@ export const useFetch = (url) => {
     })
 
     useEffect(() => {
-        getData(url).then((data) => {
-            setState({data: data, loading: false})
-        })
+        if (url) {
+            getData(url).then((data) => {
+                setState({ data: data, loading: false })
+            })
+        }
     }, [url])
-    
-  return state
+
+    return state
 }
 

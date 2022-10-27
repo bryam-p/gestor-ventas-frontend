@@ -1,6 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "../pages/Login/loginScreen.scss";
 @import "../layout/NavBar/navBar.scss";
 @import "../components/TabsPanel/tabScreen.scss";
+@import '../components/SalesRecord/salesRecord.scss';
 
 :root {
   font-family: "Poppins", sans-serif;
@@ -21,8 +25,16 @@ body {
   background-color: var(--main-color);
 }
 
-.mt-1 {
-  margin-top: 0.2rem;
+.flex-item {
+  display: flex;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
 }
 
 .generalContainer {
@@ -50,4 +62,12 @@ body {
 
 .linkUnderline:hover {
   color: #074b83;
+}
+
+.mt-1 {
+  margin-top: 0.2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
 }
