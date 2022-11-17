@@ -3,6 +3,7 @@ import { NavBar } from '../layout/NavBar/NavBar'
 import { Home } from '../pages/Home/Home'
 import { LoginScreen } from '../pages/Login/LoginScreen'
 import { RegisterScreen } from '../pages/Register/RegisterScreen'
+import { UploadFiles } from '../pages/UploadFiles/UploadFiles'
 import { Users } from '../pages/Users/Users'
 import { PrivateRoute } from './PrivateRoute'
 import { PublicRoute } from './PublicRoute'
@@ -28,6 +29,7 @@ export const AppRouter = () => {
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="/users" element={<Users />} />
+                            <Route path="/upload" element={<UploadFiles />} />
                         </Routes>
                     </PrivateRoute>
                 }

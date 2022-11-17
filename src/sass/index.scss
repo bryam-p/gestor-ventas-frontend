@@ -5,6 +5,7 @@
 @import "../layout/NavBar/navBar.scss";
 @import "../components/TabsPanel/tabScreen.scss";
 @import '../components/SalesRecord/salesRecord.scss';
+@import '../pages/UploadFiles/uploadFiles.scss';
 
 :root {
   font-family: "Poppins", sans-serif;
@@ -70,4 +71,8 @@ body {
 
 .mt-2 {
   margin-top: 2rem;
+}
+
+.content-modal {
+  flex-wrap: nowrap;
 }

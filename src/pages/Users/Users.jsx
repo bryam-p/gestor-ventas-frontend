@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Modal from '../../components/Modal/Modal';
+import ModalDelete from '../../components/Modal/ModalDelete';
 import { useFetch } from '../../hooks/useFetch';
 
 export const Users = () => {
@@ -46,6 +48,9 @@ export const Users = () => {
                                 <th scope="col" className="relative px-6 py-3">
                                     <span className="sr-only">Edit</span>
                                 </th>
+                                <th scope="col" className="relative px-6 py-3">
+                                    <span className="sr-only">Delete</span>
+                                </th>
                             </tr>
                         </thead>
                         <tbody className="bg-white divide-y divide-gray-200">
@@ -84,10 +89,11 @@ export const Users = () => {
                                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                         {person.rol}
                                     </td>
-                                    <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                                            Edit
-                                        </a>
+                                    <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium cursor-pointer">
+                                        <Modal personData={person} />
+                                    </td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium cursor-pointer">
+                                        <ModalDelete personData={person} />
                                     </td>
                                 </tr>
                             ))}
