@@ -1,10 +1,10 @@
-import { SalesRecord } from "../../components/SalesRecord/SalesRecord";
+import SalesInputs from "../../components/SalesInputs/SalesInputs";
 
 export const Home = () => {
 
   return (
     <div className="generalContainer">
-      <SalesRecord />
+      <SalesInputs />
     </div>
   )
 }

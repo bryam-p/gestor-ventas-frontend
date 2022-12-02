@@ -76,3 +76,73 @@ body {
 .content-modal {
   flex-wrap: nowrap;
 }
+
+.container--home {
+  width: 100%;
+}
+
+.container--home .content--form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container--home .cont__extra {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container--home .cont__extra .cont__input {
+  display: flex;
+  flex-direction: column;
+  max-width: 20%;
+  width: 100%;
+  margin: 10px 5px;
+  position: relative;
+}
+
+.container--home .cont__extra .cont__input>label {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(36, 36, 36);
+}
+
+.container--home .cont__extra input {
+  border: none !important;
+  padding: 15px 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.container--home .cont__extra input:hover {
+  background-color: #d6f1f7 !important;
+}
+
+.container--home .cont__saveButtons {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
+  margin-top: 65px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+.container--home .title {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 50px;
+  color: #171717;
+  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 3rem 0;
+}
+
+
+.ui.pointing.above.prompt.label {
+  color: red;
+  font-size: 12px;
+}

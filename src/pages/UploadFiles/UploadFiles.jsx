@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Button } from "@material-tailwind/react";
 import { uploadFiles } from '../../firebase/config'
 import { useForm } from '../../hooks/useForm';
@@ -9,7 +9,6 @@ export const UploadFiles = () => {
     const [preview, setPreview] = useState()
 
     const handleOnFile = ({ target }) => {
-
         if (target.files[0]) {
             setSaveFile(target.files[0])
 
@@ -24,8 +23,6 @@ export const UploadFiles = () => {
         }
     }
 
-    console.log(preview)
-
     const [formValues, handleInputChange] = useForm({
         rename: '',
         sales_id: ''
@@ -35,14 +32,13 @@ export const UploadFiles = () => {
         e.preventDefault()
 
         uploadFiles(saveFile, formValues.rename)
+
         const response = postData('http://localhost:4000/api/file', {
             name: formValues.rename,
             type: saveFile.type,
             size: Number(saveFile.size),
             id_sale: formValues.sales_id
         })
-
-        console.log('response', response)
 
         response.then(res => {
             if (res.status === 200) {

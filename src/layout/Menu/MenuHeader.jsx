@@ -23,6 +23,9 @@ export const MenuHeader = () => {
                     <MenuItem>
                         <Link to="/users">Usuarios</Link>
                     </MenuItem>
+                    <MenuItem>
+                        <Link to="/upload">Subir archivos</Link>
+                    </MenuItem>
                 </MenuList>
             </Menu>
         </>

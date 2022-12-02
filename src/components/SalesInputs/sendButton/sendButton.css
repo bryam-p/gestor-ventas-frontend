@@ -1,0 +1,30 @@
+.sendButton {
+    border: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #4d944f;
+    background-color: #86e189;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.sendButton:hover {
+    background-color: #64d868;
+}
+
+.saveButton {
+    background-color: #60cde6;
+    color: #3e8496;
+}
+
+.saveButton--disabled {
+    background-color: #60cde6;
+    color: #3e8496;
+}
+
+.saveButton:hover {
+    background-color: #5bc4dc;
+}
